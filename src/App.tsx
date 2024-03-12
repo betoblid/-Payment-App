@@ -1,4 +1,3 @@
-
 import { Container } from './Components/Container'
 import { Banner } from './Components/Banner/Banner'
 import { Footer } from './Components/Footer'
@@ -9,6 +8,7 @@ import { Card } from './Components/Card'
 import Message from "./assets/icon-message.svg"
 import elipse from "./assets/icon-elipse.svg";
 import dps from "./assets/dps.svg"
+import { ListCredit } from './Components/ListCredit/ListCredit'
 
 function App() {
 
@@ -69,7 +69,7 @@ function App() {
           </div>
         </Container>
         <Container>
-          <div className='max-w-[370px] relative'>
+          <div className="max-w-[370px] relative mb-10">
             <h2 className='text-blue-660 text-5xl font-medium font-roboto relative z-10'>
               Available in 5 different languages
             </h2>
@@ -80,17 +80,18 @@ function App() {
             <figure className='flex items-center gap-4'>
               <img src={dps} alt="depoimentos" title='depoimentos' />
               <figcaption className='font-medium text-xl'>11+</figcaption>
-              <img src={elipse} alt="icon elipse" className='absolute -top-4 -left-4 size-20'  title='icon elipse'/>
+              <img src={elipse} alt="icon elipse" className='absolute -top-4 -left-4 size-20' title='icon elipse' />
             </figure>
 
           </div>
           <figure className='relative'>
-            <img src={Message} alt="icon message" title='Message' className='z-10 relative'/>
+            <img src={Message} alt="icon message" title='Message' className='z-10 relative' />
 
-            <img src={elipse}  alt="icon elipse" className='absolute -right-4 -bottom-4 size-20' title='icon elipse' />
+            <img src={elipse} alt="icon elipse" className='absolute lg:-right-4 right-0 bottom-0 size-20' title='icon elipse' />
           </figure>
 
         </Container>
+        <ListCredit />
       </main>
       <Footer />
     </>

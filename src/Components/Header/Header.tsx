@@ -13,7 +13,7 @@ export const Header = () => {
                     <img src={Logo} alt="Logo da empresa" title="Nossa logo" />
                 </figure>
 
-                <nav className={`fixed top-0 left-0 w-3/4 bg-white h-screen md:bg-transparent md:h-auto md:relative md:w-auto ${close && "hidden md:block"}`}>
+                <nav className={`fixed top-0 left-0 w-3/4 bg-white h-screen md:bg-transparent md:h-auto md:relative md:w-auto ${!close && "hidden md:block"}`}>
                     <ul className="font-roboto flex md:gap-5 flex-col md:flex-row font-medium">
                         <li className=" p-4 md:hidden">
                             <button onClick={() => setClose(((close) => !close))}>

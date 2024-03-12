@@ -8,7 +8,8 @@ export default {
     extend: {
       backgroundImage: {
         "banner": "url('./src/assets/bg (1).png')",
-        "elipse": "url('./src/assets/icon-elipse.svg')"
+        "elipse": "url('./src/assets/icon-elipse.svg')",
+        "bg": "url('./src/assets/bg2.png')"
       },
       fontFamily: {
         "roboto": ["Roboto", "sans-serif"]
@@ -19,8 +20,13 @@ export default {
         'back-color': '#F2F6FF'
       },
       colors: {
+        'blue-dark': '#16194F',
         'blue-660': '#554DDE',
-        "blue-330": "#6A6D9E"
+        "blue-330": "#6A6D9E",
+        'pink-light': '#F44E77'
+      },
+      content: {
+        'check': "url('./src/assets/check.svg')"
       }
     },
   },
